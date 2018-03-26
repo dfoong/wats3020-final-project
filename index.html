@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Wallpaper Maker</title>
+  <meta name="description" content="Wallpaper Maker">
+  <meta name="author" content="Debbie Foong">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/dom-to-image.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="form-container">
+    <h1>Wallpaper Maker</h1>
+    <p>Choose your settings to generate a nice wallpaper for your computer, or phone!</p>
+    <form>
+      <p>
+        <label for="topText">Top Text</label>
+        <input name="topText" placeholder="Text for top of image." value="">
+      </p>
+      <p>
+        <label for="bottomText">Bottom Text</label>
+        <input name="bottomText" placeholder="Text for bottom of image." value="">
+      </p>
+      <p>
+        <!--Color picker-->
+      <p>
+        <label for="colorWell">Text Color</label>
+<input type="color" value="#ff0000" id="colorWell">
+      </p>
+      <!--Background picture Selector-->
+        <label for="backgroundImage">Background</label>
+        <select name="backgroundImage">
+          <option value="bamboo.jpg">bamboo</option>
+          <option value="amsterdam.jpg">amsterdam</option>
+          <option value="poppies.jpg">poppy field</option>
+          <option value="sakura.jpg">sakura</option>
+          <option value="hcm.jpg">city skyline</option>
+        </select>
+      </p>
+      <!--Height and Width attribute added by Debbie with help of Jesse-->
+      <p>
+        <label for="imageHeight">Height</label>
+        <select name="imageHeight">
+          <option value="400px">400px</option>
+          <option value="600px">600px</option>
+          <option value="800px">800px</option>
+          <option value="1280px">1280px</option>
+        </select>
+      </p>
+            <p>
+        <label for="imageWidth">Width</label>
+        <select name="imageWidth">
+         <option value="600px">600px</option>
+          <option value="1080px">1080px</option>
+         <option value="1280px">1280px</option>
+         <option value="2300px">2300px</option>
+        </select>
+      </p>
+      <p><input type="submit" value="Download Image"></p>
+    </form>
+  </div>
+
+  <div id="image-preview">
+    <!-- Image Content Goes Here -->
+  </div>
+</body>
+</html>
